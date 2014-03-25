@@ -197,7 +197,7 @@ abstract class HTML {
 			$attributes = self::parse_attr($attributes);
 		}
 
-		return '<a href="' . $uri . '"' . $attributes . '>' . $label . '</a>';
+		return '<a href="' . $url . '"' . ($attributes ? $attributes : '') . '>' . $label . '</a>';
 	}
 
 	/**
